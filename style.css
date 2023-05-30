@@ -1,15 +1,51 @@
-h1 { 
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
 
 body {
-    background:rgba(131, 199, 226, 0.945);
-    color: whitesmoke;
-    border-radius: 1em;
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    background: #000;
+    color: #fff;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.grid-container {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+.grid-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+    transition: transform 0.5s;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.quote {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.spotify-embed {
+    width: 100%;
+    height: 80px;
+}
+
+.spotify-embed iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
